@@ -1,19 +1,19 @@
-# 🖋️ Handwritten Notes Digitization & Search
+# Handwritten Notes Digitization & Search
 
 This project builds a **pipeline** to digitize **handwritten medical notes**,  
-store them in a **vector database (FAISS)**, and provide a **searchable REST API**.
+store them in a **vector database (FAISS)**, and provide a **searchable Fast API**.
 
 ---
 
-## 🚀 Features
-- 📸 **OCR Extraction** – Uses **AWS Textract** to extract text from handwritten images or PDFs.
-- 🧹 **Cleaning & Structuring** – Cleans and stores extracted text in JSON.
-- 🔍 **Vector Search** – Embeds text using **Sentence-Transformers** and stores vectors in **FAISS**.
-- 🌐 **FastAPI Search API** – Query notes by keyword and get the most relevant matches.
+## Features
+- **OCR Extraction** – Uses **AWS Textract** to extract text from handwritten images or PDFs.
+- **Cleaning & Structuring** – Cleans and stores extracted text in JSON.
+- **Vector Search** – Embeds text using **Sentence-Transformers** and stores vectors in **FAISS**.
+- **FastAPI Search API** – Query notes by keyword and get the most relevant matches.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 handwritten-notes-digitization/
 ├─ sample_data/          # Add handwritten images or PDFs here
@@ -28,12 +28,12 @@ handwritten-notes-digitization/
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 - **Python 3.8+**
 - **AWS Account** (Free tier is fine)
 - AWS Textract enabled in your region.
 
-### 1️⃣ Set up AWS Credentials
+### Set up AWS Credentials
 Create a free AWS account: [https://aws.amazon.com/free](https://aws.amazon.com/free)
 
 Configure AWS CLI (one-time):
@@ -50,7 +50,7 @@ These credentials allow the Python SDK (`boto3`) to call AWS Textract.
 
 ---
 
-## 💻 Installation
+## Installation
 Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/<your-username>/handwritten-notes-digitization.git
@@ -120,7 +120,7 @@ Response:
 
 ---
 
-## 🧩 Technologies Used
+## Technologies Used
 | Component        | Technology |
 |------------------|-----------|
 | OCR Extraction   | AWS Textract |
@@ -130,13 +130,13 @@ Response:
 
 ---
 
-## 📝 Deliverables
+## Deliverables
 - **GitHub Repository** – Source code with all scripts and README.
 - **Demo** – Run locally and query the API for keyword-based note retrieval.
 
 ---
 
-## ⚠️ Notes
+## Notes
 - AWS Textract free tier provides **1,000 pages/month** of free text extraction.
 - Make sure AWS credentials are set up correctly (`~/.aws/credentials` or environment variables).
 - Use dummy handwritten notes if no real medical data is available.
