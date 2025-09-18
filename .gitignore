@@ -1,0 +1,7 @@
+__pycache__/
+venv
+.env
+sample_data/
+extracted.json
+faiss.index
+metadata.json

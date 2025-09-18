@@ -1,0 +1,9 @@
+boto3
+fastapi
+uvicorn
+faiss-cpu          # or faiss-gpu if GPU
+sentence-transformers
+pandas
+python-dotenv
+pydantic
+uvicorn[standard]
